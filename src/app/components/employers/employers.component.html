@@ -1,0 +1,24 @@
+
+<div class="employers" >
+    <h2>Employers</h2>
+
+    <ul *ngFor ="let employer of employers" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+       
+        <li >
+            {{employer.employerId}}
+        </li>
+        <li >
+            {{employer.name}}
+        </li>
+        <li >
+            {{employer.description}}
+        </li>
+        <li >
+            {{employer.contact}}
+        </li>
+        <li >
+            {{employer.image}}
+        </li>
+        
+    </ul>
+</div>

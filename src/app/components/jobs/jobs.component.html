@@ -1,0 +1,23 @@
+<div class="jobs" >
+    <h2>Jobs</h2>
+
+    <ul *ngFor ="let job of jobs" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+       
+        <li >
+            {{job.jobId}}
+        </li>
+        <li >
+            {{job.title}}
+        </li>
+        <li >
+            {{job.description}}
+        </li>
+        <li >
+            {{job.job_type}}
+        </li>
+        <li >
+            {{job.company_name}}
+        </li>
+        
+    </ul>
+</div>
