@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { EmployersComponent } from './components/employers/employers.component';
 import { JobseekersComponent } from './components/jobseekers/jobseekers.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JobsComponent,
     EmployersComponent,
-    JobseekersComponent
+    JobseekersComponent,
+    NavbarComponent
   ],
   imports: [
     
