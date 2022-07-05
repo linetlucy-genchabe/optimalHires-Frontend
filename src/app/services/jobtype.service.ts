@@ -2,19 +2,19 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Jobseekers } from '../models/Jobseeker';
+import { Jobtypes } from '../models/Jobtype';
 
 @Injectable({
   providedIn: 'root'
 })
-export class JobseekersService {
+export class JobtypeService {
   API_URL = environment.API_URL
 
   constructor(private http: HttpClient) { }
 
 
-  getJobseekers(): Observable<Jobseekers[]>{
-    return this.http.get<Jobseekers[]>(this.API_URL +'jobseeker');
+  getJobtypes(): Observable<Jobtypes[]>{
+    return this.http.get<Jobtypes[]>(this.API_URL +'jobtype');
 
   }
 }

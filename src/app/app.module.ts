@@ -9,8 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { EmployersComponent } from './components/employers/employers.component';
 import { JobseekersComponent } from './components/jobseekers/jobseekers.component';
+
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+
+import { JobtypeComponent } from './components/jobtype/jobtype.component';
+
+import { CategoryComponent } from './components/category/category.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +25,15 @@ import { EmployerprofileComponent } from './components/employerprofile/employerp
     JobsComponent,
     EmployersComponent,
     JobseekersComponent,
+
     JobseekerprofileComponent,
     EmployerprofileComponent
+
+    JobtypeComponent,
+ 
+    CategoryComponent,
+    NavbarComponent
+
   ],
   imports: [
     
