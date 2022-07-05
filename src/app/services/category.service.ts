@@ -2,19 +2,20 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Jobseekers } from '../models/Jobseeker';
+import { Categories } from '../models/Category';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class JobseekersService {
+export class CategoryService {
   API_URL = environment.API_URL
 
   constructor(private http: HttpClient) { }
 
 
-  getJobseekers(): Observable<Jobseekers[]>{
-    return this.http.get<Jobseekers[]>(this.API_URL +'jobseeker');
+  getCategories(): Observable<Categories[]>{
+    return this.http.get<Categories[]>(this.API_URL +'category');
 
   }
 }
