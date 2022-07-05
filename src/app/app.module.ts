@@ -12,6 +12,7 @@ import { JobseekersComponent } from './components/jobseekers/jobseekers.componen
 import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CategoryComponent } from './components/category/category.component';
     JobseekersComponent,
     JobtypeComponent,
  
-    CategoryComponent
+    CategoryComponent,
+    NavbarComponent
   ],
   imports: [
     
