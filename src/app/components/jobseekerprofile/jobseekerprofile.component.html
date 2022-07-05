@@ -1,0 +1,63 @@
+<div class="jobseekerprofile" >
+    <h2>Applicant Profile</h2>
+
+    <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+       
+        <li >
+            {{jobseekerprofile.jobseeker.jobseekerId}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.fullname}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.image}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.gender}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.image}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.resume}}
+        </li>
+        <li >
+            {{jobseekerprofile.about_me}}
+        </li>
+        <li >
+            {{jobseekerprofile.phone_number}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.location}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.educational_qualification}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.professional_designation}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.experience_years}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.employer}}
+        </li>
+
+        <li >
+            {{jobseekerprofile.job_category}}
+        </li>
+        <li >
+            {{jobseekerprofile.salary}}
+        </li>
+        <li >
+            {{jobseekerprofile.create_at}}
+        </li>
+
+
+    </ul>
+</div>

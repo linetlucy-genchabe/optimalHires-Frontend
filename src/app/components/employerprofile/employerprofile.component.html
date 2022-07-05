@@ -1,0 +1,29 @@
+<div class="employerprofile" >
+    <h2>Employer Profile</h2>
+
+    <ul *ngFor ="let employerprofile of employerprofile" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+       
+        <li >
+            {{employerprofile.employer.employerId}}
+        </li>
+        <li >
+            {{employerprofile.employer.name}}
+        </li>
+        <li >
+            {{employerprofile.employer.description}}
+        </li>
+        <li >
+            {{employerprofile.employer.contact}}
+        </li>
+        <li >
+            {{employerprofile.employer.image}}
+        </li>
+        <li >
+            {{employerprofile.current_opportunities}}
+        </li>
+        <li >
+            {{employerprofile.employee_benefits}}
+        </li>
+
+    </ul>
+</div>
