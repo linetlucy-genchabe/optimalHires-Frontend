@@ -2,7 +2,7 @@
 <div class="jobseekers" >
     <h2>Jobseekers</h2>
 
-    <ul *ngFor ="let jobseeker of jobseekers" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+    <ul *ngFor ="let jobseeker of jobseekers" style=" border: 2px solid rgb(151, 50, 67);border-radius:20px;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
        
         <li >
             {{jobseeker.jobseekerId}}
@@ -12,6 +12,7 @@
         </li>
         <li >
             {{jobseeker.image}}
+           <img src="" alt=""> 
         </li>
         <li >
             {{jobseeker.gender}}
