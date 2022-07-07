@@ -17,6 +17,11 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { AboutComponent } from './components/about/about.component';
+import { ApplicantComponent } from './components/applicant/applicant.component';
+import { EmployerComponent } from './components/employer/employer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -27,12 +32,18 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     JobseekersComponent,
 
     JobseekerprofileComponent,
-    EmployerprofileComponent
+    EmployerprofileComponent,
 
-    JobtypeComponent,
+    
  
     CategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    ReviewsComponent,
+    AboutComponent,
+    ApplicantComponent,
+    EmployerComponent,
+    FooterComponent,
+  
 
   ],
   imports: [
