@@ -19,6 +19,11 @@ import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginOptionsComponent } from './components/login-options/login-options.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { AboutComponent } from './components/about/about.component';
+import { ApplicantComponent } from './components/applicant/applicant.component';
+import { EmployerComponent } from './components/employer/employer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -31,11 +36,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     JobseekerprofileComponent,
     EmployerprofileComponent,
 
-    JobtypeComponent,
+    
  
     CategoryComponent,
     NavbarComponent,
-    LoginOptionsComponent
+    LoginOptionsComponent,
+    ReviewsComponent,
+    AboutComponent,
+    ApplicantComponent,
+    EmployerComponent,
+    FooterComponent,
+  
 
   ],
   imports: [
