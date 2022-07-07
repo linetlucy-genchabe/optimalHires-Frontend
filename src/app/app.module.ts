@@ -17,6 +17,8 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
@@ -38,6 +40,7 @@ import { FooterComponent } from './components/footer/footer.component';
  
     CategoryComponent,
     NavbarComponent,
+    LoginOptionsComponent,
     ReviewsComponent,
     AboutComponent,
     ApplicantComponent,
@@ -50,7 +53,8 @@ import { FooterComponent } from './components/footer/footer.component';
     
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
