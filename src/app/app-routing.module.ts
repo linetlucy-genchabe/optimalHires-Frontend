@@ -13,6 +13,17 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { AboutComponent } from './components/about/about.component';
+import { ApplicantComponent } from './components/applicant/applicant.component';
+import { EmployerComponent } from './components/employer/employer.component';
+// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+// import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+// import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
+// import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+// import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+
 
 const routes: Routes = [
 
@@ -21,12 +32,14 @@ const routes: Routes = [
   {path: 'jobseeker', component: JobseekersComponent },
   {path: 'category', component: CategoryComponent },
   {path: 'navbar', component: NavbarComponent },
+  {path: 'about', component: AboutComponent },
  
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  
 })
 export class AppRoutingModule { }
