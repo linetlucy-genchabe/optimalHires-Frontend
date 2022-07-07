@@ -13,6 +13,7 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   {path: 'jobseeker', component: JobseekersComponent },
   {path: 'category', component: CategoryComponent },
   {path: 'navbar', component: NavbarComponent },
+  {path: 'login_options', component: LoginOptionsComponent},
   {path: 'about', component: AboutComponent },
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
