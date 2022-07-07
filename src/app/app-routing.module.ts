@@ -22,12 +22,13 @@ import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseek
 // import { login_component } from './components/login/login.component';
 
 
+import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
-
 
 const routes: Routes = [
 
@@ -40,7 +41,9 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
- 
+  {path: 'dashboard', component: EmployerDashboardComponent }
+  
+
 
 ];
 
