@@ -17,7 +17,10 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
 import { EmployerComponent } from './components/employer/employer.component';
-// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+// import { login_component } from './components/login/login.component';
+
+
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
@@ -33,6 +36,8 @@ const routes: Routes = [
   {path: 'category', component: CategoryComponent },
   {path: 'navbar', component: NavbarComponent },
   {path: 'about', component: AboutComponent },
+  {path: 'reviews', component: ReviewsComponent },
+  {path: 'applicant', component: ApplicantComponent },
  
 
 ];
@@ -40,6 +45,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  
+
 })
 export class AppRoutingModule { }

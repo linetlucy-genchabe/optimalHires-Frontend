@@ -8,12 +8,12 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-item nav-link active" routerLink='#' routerLinkActive='active'><b>Home</b><span
-            class="sr-only"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link active" aria-current="page" href="#">Home</a>
+            class="sr-only"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link active" routerLink='#' routerLinkActive='active'><b>About</b><span
+          <a class="nav-item nav-link active" routerLink='/about' routerLinkActive='active'><b>About</b><span
             class="sr-only"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="nav-link active" href="#">About</a>
+      
         </li>
         <li class="nav-item">
           
@@ -27,14 +27,19 @@
          
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Review</a>
+          <a class="nav-item nav-link active" routerLink='/reviews' routerLinkActive='active'><b>Reviews</b><span
+            class="sr-only"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
         </li>
       </ul>
       <form class="d-flex">
         <!-- <button class="btn btn-outline-success" type="submit">Register/Login</button> -->
         <button class="btn btn-outline-light" style="background-color: orange"  type="submit">Register/Login</button>
-
+        <a class="nav-item  nav-link  btn-light rounded-circle" style="color: #919D47;" routerLink='login_options'
+        routerLinkActive='active'><b>Login</b></a>
       </form>
     </div>
   </div>
 </nav>
+
+
+

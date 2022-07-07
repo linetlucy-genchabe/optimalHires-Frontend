@@ -22,6 +22,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
 import { EmployerComponent } from './components/employer/employer.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ApplicantComponent,
     EmployerComponent,
     FooterComponent,
+    EmployerDashboardComponent,
+    JobseekerDashboardComponent,
   
 
   ],
