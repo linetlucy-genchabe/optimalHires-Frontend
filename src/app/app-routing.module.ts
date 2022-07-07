@@ -18,13 +18,17 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
 import { EmployerComponent } from './components/employer/employer.component';
-// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+// import { login_component } from './components/login/login.component';
+
+
+import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
-
 
 const routes: Routes = [
 
@@ -35,13 +39,17 @@ const routes: Routes = [
   {path: 'navbar', component: NavbarComponent },
   {path: 'login_options', component: LoginOptionsComponent},
   {path: 'about', component: AboutComponent },
- 
+  {path: 'reviews', component: ReviewsComponent },
+  {path: 'applicant', component: ApplicantComponent },
+  {path: 'dashboard', component: EmployerDashboardComponent }
+  
+
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  
+
 })
 export class AppRoutingModule { }
