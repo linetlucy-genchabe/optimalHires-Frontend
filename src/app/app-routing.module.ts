@@ -13,6 +13,7 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
 
 const routes: Routes = [
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'jobseeker', component: JobseekersComponent },
   {path: 'category', component: CategoryComponent },
   {path: 'navbar', component: NavbarComponent },
+  {path: 'login_options', component: LoginOptionsComponent},
  
 
 ];

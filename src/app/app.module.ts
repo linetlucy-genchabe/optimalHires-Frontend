@@ -17,6 +17,8 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,19 +29,21 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     JobseekersComponent,
 
     JobseekerprofileComponent,
-    EmployerprofileComponent
+    EmployerprofileComponent,
 
     JobtypeComponent,
  
     CategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginOptionsComponent
 
   ],
   imports: [
     
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
