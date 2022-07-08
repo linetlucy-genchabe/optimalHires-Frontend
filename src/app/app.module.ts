@@ -14,6 +14,8 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     EmployersComponent,
     JobseekersComponent,
     JobtypeComponent,
- 
+    JobseekerDashboardComponent,
     CategoryComponent,
     NavbarComponent
   ],
