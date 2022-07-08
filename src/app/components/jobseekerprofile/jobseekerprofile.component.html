@@ -1,4 +1,129 @@
-<div class="jobseekerprofile" >
+
+
+
+
+
+
+<div class="row">
+
+    <!-- <div class="col-md-3">
+      <app-sidebar>
+  
+      </app-sidebar>
+    </div> -->
+  
+    <div class="col-md-12">
+      <div class="container ">
+        <div class="row">
+          <!-- <div class="col-md-12"></div> -->
+          <div class=" offset-2 col-md-8 mt-4 bg-orange prof mr-2 ml-2">
+            <div class="card" style="border-color: purple; width:40rem;">
+              <h2 class="text-center">Applicant Profile</h2>
+              <div style="border-color:purple; ">
+                <img class="rounded-circle account-img d-block mx-auto" style="border-radius:125px;" src=""
+                  height="125px" width="125px">
+              </div>
+            
+              <p class="text-center">Applicant Details</p>
+
+
+                  <form [formGroup]="jobseekerProfileForm" (ngSubmit)="SaveJobseekerProfileData()">
+                    <!-- <div class="mb-3">
+                      <label class="form-label">Jobseeker Id</label>
+                      <input type="txt" class="form-control" placeholder="Autofilled" formControlName="jobseekerId">
+                    </div>  -->
+                    <div class="mb-3">
+                        <label class="form-label">Name </label>
+                        <input type="txt" class="form-control" placeholder="Enter Name" formControlName="fullname" >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Photo </label>
+                        <input type="txt" class="form-control" placeholder="Upload Image" formControlName="image">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Gender </label>
+                        <input type="txt" class="form-control" placeholder="Gender" formControlName="gender">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Resume </label>
+                        <input type="txt" class="form-control" placeholder="Upload Resume" formControlName="resume">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Bio</label>
+                        <input type="txt" class="form-control" placeholder="About Me" formControlName="about_me">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tel </label>
+                        <input type="txt" class="form-control" placeholder="Phone Number" formControlName="phone_number">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email </label>
+                        <input type="txt" class="form-control" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Location </label>
+                      <input type="txt" class="form-control" placeholder="Location" formControlName="location">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Education </label>
+                      <input type="txt" class="form-control" placeholder="Educational Qulifications" formControlName="educational_qualification">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Proffession </label>
+                      <input type="txt" class="form-control" placeholder="Professional Designation" formControlName="professional_designation">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Years of Experience </label>
+                      <input type="txt" class="form-control" placeholder="Years" formControlName="experience_years">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Job Category </label>
+                      <input type="txt" class="form-control" placeholder="Job Category" formControlName="job_category">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Salary </label>
+                      <input type="txt" class="form-control" placeholder="Salary" formControlName="salary">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Availability</label>
+                      <input type="txt" class="form-control" placeholder="Available Hours" formControlName="availability">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date </label>
+                      <input type="txt" class="form-control" placeholder="Date Created" formControlName="create_at">
+                    </div>
+
+                    <button type="submit" class="btn btn" style="background-color: orange;">Submit</button>
+                  </form>
+
+<app-update-jobseekerprofile></app-update-jobseekerprofile> 
+  
+              
+              <a class="btn" href="/update_jobseekerprofile/{{jobseekerId}}">
+                <img
+                  src="https://img.icons8.com/external-wanicon-two-tone-wanicon/30/000000/external-edit-user-interface-wanicon-two-tone-wanicon.png" />
+                &nbsp; <b>Edit Profile</b>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+  
+  
+      </div>
+    </div>
+    <!-- <div class="col-md-3">
+      <app-contacts></app-contacts>
+    </div> -->
+  </div>
+
+
+
+
+
+
+
+<!-- <div class="jobseekerprofile" >
     <h2>Applicant Profile</h2>
 
     <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
@@ -60,4 +185,4 @@
 
 
     </ul>
-</div>
+</div> -->

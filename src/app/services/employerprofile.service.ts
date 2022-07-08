@@ -17,4 +17,9 @@ export class EmployerprofileService {
     return this.http.get<EmployerProfile[]>(this.API_URL +'employerprofile');
 
   }
+
+  saveEmployerData(data:any){
+    // console.log(data);
+    return this.http.post(this.API_URL, data );
+  }
 }

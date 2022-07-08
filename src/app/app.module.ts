@@ -18,6 +18,10 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { UpdateJobseekerprofileComponent } from './components/update-jobseekerprofile/update-jobseekerprofile.component';
+import { UpdateEmployerprofileComponent } from './components/update-employerprofile/update-employerprofile.component';
+
 
 @NgModule({
   declarations: [
@@ -27,19 +31,23 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     JobseekersComponent,
 
     JobseekerprofileComponent,
-    EmployerprofileComponent
+    EmployerprofileComponent,
 
     JobtypeComponent,
  
     CategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    UpdateJobseekerprofileComponent,
+    UpdateEmployerprofileComponent,
+    
 
   ],
   imports: [
     
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
