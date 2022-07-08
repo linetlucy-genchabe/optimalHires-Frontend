@@ -19,7 +19,10 @@
                   job opportunities with us. </h4><br>
               
               <p align="center">Sign up with us,update your Profile<br><br>
-                and we will help you find the best job opportunities for you.
+                and we will help you find the best job opportunities for you.<br><br>
+                <div class="container" align="center">
+                    <button style="background-color:orange"><h4>Create Profile</h4> <a class="card-link"  href="{% url 'profile' %}"></a></button>
+                  </div>
               
            </div>
         </div>
@@ -27,19 +30,23 @@
            <div class="about_img">
               <figure><img src="https://media.istockphoto.com/photos/thoughtful-afro-woman-looking-for-new-job-online-picture-id1210523597?k=20&m=1210523597&s=612x612&w=0&h=8-DkNtKlYUOe8NmAerqECKcj9V13QjsGtme30xKrbXE=" class="rounded-circle"height="400" width="500"class="rounded-circle"alt="#"/></figure>
            </div>
+           
         </div>
-        <div class="container" align="center">
-            <button style="background-color:orange"><h4>Create Profile</h4> <a class="card-link"  href="{% url 'profile' %}"></a></button>
-          </div>
+       
      </div>
   </div>
 </div><br>
 
 <div class="container">
+   
+
     <h3>
         Complete your profile and level up.
 
     </h3>
+    <div class="container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY" height="300" width="700"></iframe>
+      </div>
     <br>
     <p>
         A 100% complete profile will help you to find the best job opportunities for you.
@@ -220,7 +227,89 @@
     
    
 <!-- about section -->
+<app-navbar></app-navbar>
+<!-- <p>jobseeker-dashboard works!</p> -->
 
+ <h1 style="color:orange; font-weight:bold" align="center">
+     <b>Employer Dashboard</b>
+ </h1><br>
+ <marquee behavior="alternate" ><span style="font-weight:1000; color:rgb(113, 180, 192); font-weight:bold"><h4><b>Welcome to Employer Dashboard</b></h4></span></marquee>
+ 
+ <!-- about section -->
+ <div id="about" class="about">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-12 col-lg-7">
+           <div class="about_box">
+              <div class="titlepage">
+              </div>
+              <br><br><br>
+              <h4 style="color:black; font-weight:bold" align="center">Find the right talent<br></h4>
+                  <h4 style="color:orange; font-weight:bold" align="center">with ease </h4><br>
+              
+              <p align="center">Make your hiring process quick and hasle-free<br>
+                using our recruitment solutions which are<br>
+                designed to help you find the right<br>
+                candidate for your job.
+              
+           </div>
+           <div class="container" align="center">
+            <button style="background-color:orange"><h4>Create Profile</h4> <a class="card-link"  href="{% url 'profile' %}"></a></button>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+           <div class="about_img">
+              <figure><img src="https://media.istockphoto.com/photos/business-people-shaking-hands-after-meeting-picture-id1218602748?k=20&m=1218602748&s=612x612&w=0&h=QiIZ9J6rgWxdDRXHhZVWmR5G9JUBvwEgMRF80MQBG0E="class="rounded-circle"height="400" width="500"class="rounded-circle"alt="#"/></figure>
+           </div>
+        </div>
+        
+     </div>
+  </div>
+</div><br>
+
+
+
+<div class="container">
+    <div class="columns">
+        <ul class="price">
+          <li class="header">Basic</li>
+          <li class="grey">$ 9.99 / year</li>
+          <li>10GB Storage</li>
+          <li>10 Emails</li>
+          <li>10 Domains</li>
+          <li>1GB Bandwidth</li>
+          <li class="grey"><a href="#" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+</div>
+
+<div class="container">
+    <div class="columns">
+        <ul class="price">
+          <li class="header">Premium</li>
+          <li class="grey">$ 19.99 / year</li>
+          <li>50GB Storage</li>
+          <li>50 Emails</li>
+          <li>50 Domains</li>
+          <li>5GB Bandwidth</li>
+          <li class="grey"><a href="#" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+</div>
+
+<div class="container">
+    <div class="columns">
+        <ul class="price">
+          <li class="header">Expert</li>
+          <li class="grey">$ 29.99 / year</li>
+          <li>100GB Storage</li>
+          <li>100 Emails</li>
+          <li>100 Domains</li>
+          <li>50GB Bandwidth</li>
+          <li class="grey"><a href="#" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+</div>
 
 
 <router-outlet></router-outlet>
