@@ -13,7 +13,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { EmployersComponent } from './components/employers/employers.component';
 import { JobseekersComponent } from './components/jobseekers/jobseekers.component';
-import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -25,7 +24,7 @@ import { EmployerComponent } from './components/employer/employer.component';
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { login_component } from './components/login/login.component';
 
-
+import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
@@ -49,6 +48,7 @@ const routes: Routes = [
   {path: 'jobseekerprofile/:id', component: JobseekerprofileComponent},
   {path: 'updatejobseekerprofile/:id', component: UpdateJobseekerprofileComponent},
 
+  {path: 'jobdashboard', component: JobseekerDashboardComponent }
   
 
 
