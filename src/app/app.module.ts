@@ -13,7 +13,6 @@ import { JobseekersComponent } from './components/jobseekers/jobseekers.componen
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 
-import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -27,9 +26,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     JobseekersComponent,
 
     JobseekerprofileComponent,
-    EmployerprofileComponent
+    EmployerprofileComponent,
 
-    JobtypeComponent,
+  
  
     CategoryComponent,
     NavbarComponent
