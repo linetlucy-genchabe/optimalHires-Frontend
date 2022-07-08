@@ -1,3 +1,99 @@
 <app-navbar></app-navbar>
+<!-- <p>jobseeker-dashboard works!</p> -->
+
+ <h1 style="color:orange; font-weight:bold" align="center">
+     <b>Jobseeker Dashboard</b>
+ </h1><br>
+ <marquee behavior="alternate" ><span style="font-weight:1000; color:orange; font-weight:bold"><h4><b>Welcome to Jobseeker Dashboard</b></h4></span></marquee>
+ 
+ <!-- about section -->
+ <div id="about" class="about">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-12 col-lg-7">
+           <div class="about_box">
+              <div class="titlepage">
+              </div>
+              <br><br><br>
+              <h4 style="color:orange; font-weight:bold" align="center">Discover new and promising<br>
+                  job opportunities with us. </h4><br>
+              
+              <p align="center">Sign up with us,update your Profile<br><br>
+                and we will help you find the best job opportunities for you.
+              
+           </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+           <div class="about_img">
+              <figure><img src="https://media.istockphoto.com/photos/thoughtful-afro-woman-looking-for-new-job-online-picture-id1210523597?k=20&m=1210523597&s=612x612&w=0&h=8-DkNtKlYUOe8NmAerqECKcj9V13QjsGtme30xKrbXE=" class="rounded-circle"height="400" width="500"class="rounded-circle"alt="#"/></figure>
+           </div>
+        </div>
+        <div class="container" align="center">
+            <button><h4>Create Profile</h4> <a class="card-link"  href="{% url 'profile' %}"></a></button>
+          </div>
+     </div>
+  </div>
+</div><br>
+
+<div class="container">
+    <h3>
+        Complete your profile and level up.
+
+    </h3>
+    <br>
+    <p>
+        A 100% complete profile will help you to find the best job opportunities for you.
+        This will unlock key features that boosts your visibility to employers.
+    </p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/photos/application-form-picture-id94321723?k=20&m=94321723&s=612x612&w=0&h=FzB0MJH_KFTHCY7mrX0305azUKds8BUD1H7QjCujBM0=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Boosted profile and applications</h5>
+              <p class="card-text">Your job applications will be highlighted and your profile recommended
+                to employers whenever they post a job relevant to your skills.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/photos/african-man-sitting-at-desk-reading-letter-feels-satisfied-picture-id1253877197?k=20&m=1253877197&s=612x612&w=0&h=5EujKn_mx7pXTG9BuccI7_vqPSMpJ1CbGHz8zFQCjo8=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Relevant Notifications</h5>
+              <p class="card-text">See who viewed your profile,opened your CV and searched
+                  for you.See if you have been shortlisted,accepted or contacted.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/photos/efficiency-in-your-hand-picture-id499110265?k=20&m=499110265&s=612x612&w=0&h=dGg6AQujq2U9CHq9LxHdY0T-4J5Y3--vn6RqLzXbuZo=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Free Professional CVs</h5>
+              <p class="card-text">You can download your completed profile as a professionally designed CV for free.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    
+    <div class="card-body text-warning">
+      <h5>Contact us on: <strong></strong></h5>
+      <a href="tel:0725615784" class="btn btn-warning">Call Me</a><br><br>
+      <a href="mailto:nina.odoyo@students.moringaschool.com?subject=Inquiry on Dr Sir/Madam,&body=Greetrings snr.Dev" class="btn btn-warning">Email Me</a>
+
+    </div>
+<!-- about section -->
+
+
 
 <router-outlet></router-outlet>
