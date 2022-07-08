@@ -19,12 +19,12 @@
   
   /* Add shadows on hover */
   .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 orange
   }
   
   /* Pricing header */
   .price .header {
-    background-color: #111;
+    background-color: orange;
     color: white;
     font-size: 25px;
   }
@@ -44,7 +44,7 @@
   
   /* The "Sign Up" button */
   .button {
-    background-color: #04AA6D;
+    background-color: rgb(113, 180, 192);
     border: none;
     color: white;
     padding: 10px 25px;
