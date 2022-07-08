@@ -17,8 +17,17 @@ import { JobtypeComponent } from './components/jobtype/jobtype.component';
 
 import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { AboutComponent } from './components/about/about.component';
+import { ApplicantComponent } from './components/applicant/applicant.component';
+import { EmployerComponent } from './components/employer/employer.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+// import { ReactiveFormsModule } from '@angular/forms';
 import { UpdateJobseekerprofileComponent } from './components/update-jobseekerprofile/update-jobseekerprofile.component';
 import { UpdateEmployerprofileComponent } from './components/update-employerprofile/update-employerprofile.component';
 
@@ -33,13 +42,22 @@ import { UpdateEmployerprofileComponent } from './components/update-employerprof
     JobseekerprofileComponent,
     EmployerprofileComponent,
 
-    JobtypeComponent,
+    
  
     CategoryComponent,
     NavbarComponent,
     UpdateJobseekerprofileComponent,
     UpdateEmployerprofileComponent,
     
+    LoginOptionsComponent,
+    ReviewsComponent,
+    AboutComponent,
+    ApplicantComponent,
+    EmployerComponent,
+    FooterComponent,
+    EmployerDashboardComponent,
+    JobseekerDashboardComponent,
+  
 
   ],
   imports: [
@@ -48,6 +66,7 @@ import { UpdateEmployerprofileComponent } from './components/update-employerprof
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
