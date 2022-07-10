@@ -15,6 +15,11 @@ import { CategoryComponent } from './components/category/category.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginemployerComponent } from './components/loginemployer/loginemployer.component';
+import { LoginjobseekerComponent } from './components/loginjobseeker/loginjobseeker.component';
+import { RegisteremployerComponent } from './components/registeremployer/registeremployer.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jo
     JobseekerDashboardComponent,
     LoginOptionsComponent,
     CategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegisterComponent,
+    LoginemployerComponent,
+    LoginjobseekerComponent,
+    RegisteremployerComponent,
+    MapComponent
   ],
   imports: [
     ReactiveFormsModule,
