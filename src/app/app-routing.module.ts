@@ -18,9 +18,13 @@ import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { login_component } from './components/login/login.component';
+import { LoginemployerComponent } from './components/loginemployer/loginemployer.component';
+import { LoginjobseekerComponent } from './components/loginjobseeker/loginjobseeker.component';
+import { RegisterComponent } from './components/register/register.component';
 
 import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+import { RegisteremployerComponent } from './components/registeremployer/registeremployer.component';
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
@@ -39,11 +43,13 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
-  {path: 'dashboard', component: EmployerDashboardComponent },
-  {path: 'jobdashboard', component: JobseekerDashboardComponent },
+  {path: 'dashboard/:id', component: EmployerDashboardComponent },
+  {path: 'jobdashboard/:id', component: JobseekerDashboardComponent },
   {path: 'jobseekerprofile', component: JobseekerprofileComponent },
-  {path: 'category', component: CategoryComponent },
-  
+  {path: 'loginemployer', component: LoginemployerComponent },
+  {path: 'loginjobseeker', component: LoginjobseekerComponent },
+  {path: 'register', component: RegisterComponent },
+  {path: 'registeremployer', component: RegisteremployerComponent },
   
   
   
