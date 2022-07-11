@@ -99,6 +99,35 @@
 
 
 
+    
+    <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid pink;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+       
+        <li >
+            {{jobseekerprofile.jobseeker.jobseekerId}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.fullname}}
+        </li>
+        <li >
+            <img src="https://res.cloudinary.com/linetlucy/{{jobseekerprofile.jobseeker.image}}" alt="">
+            
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.gender}}
+        </li>
+        <li >
+            {{jobseekerprofile.jobseeker.image}}
+        </li>
+        <li >
+            <img src="https://res.cloudinary.com/linetlucy/{{jobseekerprofile.jobseeker.resume}}" alt="">
+            
+        </li>
+        <li >
+            {{jobseekerprofile.about_me}}
+        </li>
+        <li >
+            {{jobseekerprofile.phone_number}}
+        </li>
 
 <!-- <div class="row">
 

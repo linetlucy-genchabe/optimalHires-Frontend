@@ -22,10 +22,17 @@ import { AboutComponent } from './components/about/about.component';
 import { ApplicantComponent } from './components/applicant/applicant.component';
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { login_component } from './components/login/login.component';
+import { LoginemployerComponent } from './components/loginemployer/loginemployer.component';
+import { LoginjobseekerComponent } from './components/loginjobseeker/loginjobseeker.component';
+import { RegisterComponent } from './components/register/register.component';
 
 import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+<<<<<<< HEAD
+import { RegisteremployerComponent } from './components/registeremployer/registeremployer.component';
+=======
 import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+>>>>>>> 8e6b49518c406ad62ad16a34ed193e6e6d6352e9
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
@@ -44,14 +51,21 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
+<<<<<<< HEAD
+  {path: 'dashboard/:id', component: EmployerDashboardComponent },
+  {path: 'jobdashboard/:id', component: JobseekerDashboardComponent },
+=======
   {path: 'dashboard', component: EmployerDashboardComponent },
   {path: 'jobseekerprofile/:id', component: JobseekerprofileComponent},
   {path: 'update-jobseekerprofile/:id', component: UpdateJobseekerprofileComponent},
   {path: 'employerprofile/:id', component: EmployerprofileComponent},
   {path: 'jobdashboard', component: JobseekerDashboardComponent },
+>>>>>>> 8e6b49518c406ad62ad16a34ed193e6e6d6352e9
   {path: 'jobseekerprofile', component: JobseekerprofileComponent },
-  {path: 'category', component: CategoryComponent },
-  
+  {path: 'loginemployer', component: LoginemployerComponent },
+  {path: 'loginjobseeker', component: LoginjobseekerComponent },
+  {path: 'register', component: RegisterComponent },
+  {path: 'registeremployer', component: RegisteremployerComponent },
   
 
 
