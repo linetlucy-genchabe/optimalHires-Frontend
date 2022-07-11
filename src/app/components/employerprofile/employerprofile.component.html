@@ -6,7 +6,7 @@
                 <h2>Add Employer Profile</h2>
             
             
-                <form [formGroup]="employerProfileForm" (ngSubmit)="SaveEmployerProfileData()">
+                <form [formGroup]="employerProfileForm" (ngSubmit)="saveEmployerProfileData()">
                     <!-- <div class="mb-3">
                     <label class="form-label">Employer Id</label>
                     <input type="txt" class="form-control" placeholder="Autofilled" formControlName="employerId">
@@ -41,7 +41,7 @@
                         <input type="txt" class="form-control" placeholder="List Employee Benefits" formControlName="employee_benefits">
                     </div>
                     
-                    <button type="submit" class="btn btn-warning">Submit</button>
+                    <button type="submit" class="btn btn" style="background-color: orange;">Submit</button>
                 </form>
             
                 <app-update-employerprofile></app-update-employerprofile> 

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { JobseekerProfile } from 'src/app/models/JobseekerProfile';
 import { JobseekerprofileService } from 'src/app/services/jobseekerprofile.service';
 import { JobseekersService } from 'src/app/services/jobseekers.service';
-import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
 
@@ -48,7 +47,8 @@ export class JobseekerprofileComponent implements OnInit {
     });
   
 
-    
+   message:boolean=false;
+
   ngOnInit(): void {
     this.getJobseekerProfile()
   }
@@ -62,9 +62,15 @@ export class JobseekerprofileComponent implements OnInit {
 
   SaveJobseekerProfileData(){
     // console.log(this.employerProfileForm.value)
-    this.jobseeker.saveJobseekerData(this.jobseekerProfileForm.value).subscribe((result)=>{
-      console.log(result);
+    this.jobseeker.saveJobseekerProfileData(this.jobseekerProfileForm.value).subscribe((result)=>{
+      // console.log(result);
+      this.message=true;
+      this.jobseekerProfileForm.reset({});
     });
+  }
+
+  removeMessage(){
+    this.message=false;
   }
 
 }

@@ -40,7 +40,7 @@ export class EmployerprofileComponent implements OnInit {
     })
   }
 
-  SaveEmployerProfileData(){
+  saveEmployerProfileData(){
     // console.log(this.employerProfileForm.value)
     this.employer.saveEmployerData(this.employerProfileForm.value).subscribe((result)=>{
       console.log(result);

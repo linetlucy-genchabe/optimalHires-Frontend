@@ -56,6 +56,9 @@ export class JobseekersService {
     return this.http.get(this.baseurl)
   }
 
+
+
+
   // upload(file:any):Observable<any> {
   //   // Create form data
   //   const formData = new FormData();   
