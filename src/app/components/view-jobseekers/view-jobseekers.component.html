@@ -1,0 +1,87 @@
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class=" offset-2 col-md-8">
+                
+                <div class="jobseekerprofile" >
+                    <h2 class="text-center">Jobseeker Profiles</h2>
+                
+                    <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid orange;box-shadow: 2px 2px 2px 2px orange;height:fit-content;width: 800px;">
+                        
+                        <li >
+                            {{jobseekerprofile.jobseeker.image}}
+                        </li>
+                        <li >
+                            {{jobseekerprofile.jobseeker.fullname}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.about_me}}
+                        </li>
+                        <span id="dots"></span>
+                        <span id="more" style="display: none;">
+                       
+                        <li >
+                            {{jobseekerprofile.jobseeker.gender}}
+                        </li>
+                           
+                        <li >
+                            {{jobseekerprofile.jobseeker.resume}}
+                        </li>
+                        
+                        <li >
+                            {{jobseekerprofile.phone_number}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.location}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.educational_qualification}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.professional_designation}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.experience_years}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.employer}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.job_category}}
+                        </li>
+                        <li >
+                            {{jobseekerprofile.salary}}
+                        </li>
+                        <li >
+                            {{jobseekerprofile.availability}}
+                        </li>
+                        <li >
+                            {{jobseekerprofile.create_at}}
+                        </li>
+                        
+                        <i (click)="deleteJobseekerProfile(jobseekerprofile.jobseeker.jobseekerId)" class="fa fa-trash"></i>
+                            &nbsp;
+                        <!-- <button routerLink="/update-jobseekerprofile/' {{jobseekerprofile.jobseeker.jobseekerId}}"><i class="fa fa-edit"></i> </button> -->
+                        
+                       
+                        </span><br>
+                        <button onclick="myFunction()" class="btn btn" style="background-color: orange; " id="myBtn">See more</button><br><br>
+                        
+                    </ul><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- <router-outlet></router-outlet>   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> 
+</body>

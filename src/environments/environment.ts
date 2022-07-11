@@ -7,6 +7,10 @@ export const environment = {
   API_URL: 'https://optimalhires.herokuapp.com/api/',
 };
 
+export const loginUrl = 'https://optimalhires.herokuapp.com/api/login/'
+export const loginemployerUrl = 'https://optimalhires.herokuapp.com/api/login/'
+export const logoutUrl = `https://optimalhires.herokuapp.com/api/logout`
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

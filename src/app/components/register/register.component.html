@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untitled</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+
+<body>
+    
+ 
+
+  <section class="contact-page-area">
+    <div class="container shadow" style="margin-top: 5%;padding-top: 4%; padding-bottom: 5%;">
+        <div class="row page-title">
+            <div class="col-md-5 col-sm-6">
+                <div class="pricing-desc section-padding-two">
+                    <div class="pricing-desc-title">
+                        <div class="title">
+                            <!-- <h2>Register</h2> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 col-sm-2">
+              <h2>Register Jobseeker</h2>
+                <div class="contact-form">
+                    <form method="POST" action="">
+                        <input [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}"  type="text" name="username" placeholder="username" class="form-control mb-3">
+                        <input [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}" type="text" name="email" placeholder="email" class="form-control mb-3">
+                        <input [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}" type="password" name="password" placeholder="password" class="form-control mb-3">
+                        <input [(ngModel)]="register.password2" [ngModelOptions]="{standalone: true}" type="password" name="password2" placeholder="confirm password" class="form-control mb-3">
+                        <button class="btn submit-btn mb-3" type="submit" name="submit" (click)="registerJobseeker()" >Submit</button>
+                    </form>
+                </div>
+                <div class="form-query">Already have an account? <a routerLink='/loginjobseeker'href="">Login</a></div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

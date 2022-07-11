@@ -2,7 +2,7 @@
 <div class="jobseekers" >
     <h2>Jobseekers</h2>
 
-    <ul *ngFor ="let jobseeker of jobseekers" style=" border: 2px solid rgb(151, 50, 67);border-radius:20px;box-shadow: 2px 2px 2px 2px grey;height: 200px;width: 400px;padding-top: 5%;">
+    <ul *ngFor ="let jobseeker of jobseekers" style=" border: 2px solid rgb(151, 50, 67);border-radius:20px;box-shadow: 2px 2px 2px 2px grey;height: 400px;width: 500px;padding-top: 5%;">
        
         <li >
             {{jobseeker.jobseekerId}}
@@ -10,15 +10,16 @@
         <li >
             {{jobseeker.fullname}}
         </li>
-        <li >
-            {{jobseeker.image}}
-           <img src="" alt=""> 
+        <li>
+            <img src="https://res.cloudinary.com/linetlucy/{{jobseeker.image}}" alt="jobseeker" style="height: 90px;">
         </li>
+        
         <li >
             {{jobseeker.gender}}
         </li>
         <li >
-            {{jobseeker.resume}}
+            <img src="https://res.cloudinary.com/linetlucy/{{jobseeker.resume}}" alt="resume" style="height: 80px;">
+            
         </li>
         
     </ul>
