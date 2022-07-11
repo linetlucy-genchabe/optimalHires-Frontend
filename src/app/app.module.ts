@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { LoginOptionsComponent } from './components/login-options/login-options.component';
 import { HttpClientModule } from '@angular/common/http';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { EmployersComponent } from './components/employers/employers.component';
@@ -56,11 +56,13 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     EmployerDashboardComponent,
     JobtypeComponent,
     JobseekerDashboardComponent,
+    LoginOptionsComponent,
     CategoryComponent,
     NavbarComponent
   ],
   imports: [
-    
+    ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
