@@ -1,0 +1,346 @@
+<body>
+  <div class="container">
+    <div class="">
+      <p class="text-center">Update Applicant Profile/p>
+        <div class=" offset-1 row">
+            
+  
+          <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Your Profile has been Udated Successfully.
+            <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
+          </div>
+  
+            <div class="card col-md-5" style="border-color: orange; width:27rem;">
+              <form [formGroup]="updateJobseekerProfileForm" (ngSubmit)="UpdateJobseekerProfileData()">
+                <!-- <div class="mb-3">
+                  <label class="form-label">Jobseeker Id</label>
+                  <input type="txt" class="form-control" placeholder="Autofilled" formControlName="jobseekerId">
+                </div>  -->
+                <p class="text-center">Enter Personal Details</p>
+                <div class="mb-3">
+                  <label class="form-label">Photo </label>
+                  <input type="txt" class="form-control" placeholder="Upload Image" formControlName="image">
+              </div>
+                <div class="mb-3">
+                    <label class="form-label">Name </label>
+                    <input type="txt" class="form-control" placeholder="Enter Name" formControlName="fullname" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender </label>
+                    <input type="txt" class="form-control" placeholder="Gender" formControlName="gender">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Bio</label>
+                    <input type="txt" class="form-control" placeholder="About Me" formControlName="about_me">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tel </label>
+                    <input type="txt" class="form-control" placeholder="Phone Number" formControlName="phone_number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email </label>
+                    <input type="txt" class="form-control" placeholder="Email" formControlName="email">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Location </label>
+                  <input type="txt" class="form-control" placeholder="Location" formControlName="location">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Education </label>
+                  <input type="txt" class="form-control" placeholder="Educational Qulifications" formControlName="educational_qualification">
+                </div>
+                <button type="submit" class="btn btn" style="background-color: orange;">Submit</button>
+              
+              </form>
+  
+            </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="card col-md-5" style="border-color: orange; width:27rem;">
+              <form [formGroup]="updateJobseekerProfileForm" (ngSubmit)="UpdateJobseekerProfileData()">
+                <p class="text-center" >Enter proffessional Details</p>
+                <div class="mb-3">
+                  <label class="form-label">Proffession </label>
+                  <input type="txt" class="form-control" placeholder="Professional Designation" formControlName="professional_designation">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Years of Experience </label>
+                  <input type="txt" class="form-control" placeholder="Years" formControlName="experience_years">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Job Category </label>
+                  <input type="txt" class="form-control" placeholder="Job Category" formControlName="job_category">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Salary </label>
+                  <input type="txt" class="form-control" placeholder="Salary" formControlName="salary">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Availability</label>
+                  <input type="txt" class="form-control" placeholder="Available Hours" formControlName="availability">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Resume </label>
+                  <input type="txt" class="form-control" placeholder="Upload Resume" formControlName="resume">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Date </label>
+                  <input type="txt" class="form-control" placeholder="Date Created" formControlName="create_at">
+                </div>
+    
+                <button type="submit" class="btn btn" style="background-color: orange;">Submit</button>
+              </form>
+            </div>
+  
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- <div class="row">
+
+  <div class="col-md-3">
+    <app-sidebar>
+
+    </app-sidebar>
+  </div>
+
+  <div class="col-md-12">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12"></div>
+        <div class=" offset-2 col-md-8 mt-4 bg-orange prof mr-2 ml-2">
+          <div class="card" style="border-color: orange; width:40rem;">
+            <h2 class="text-center">Update Applicant Profile</h2>
+            <div style="border-color:purple; ">
+              <img class="rounded-circle account-img d-block mx-auto" style="border-radius:125px;" src=""
+                height="125px" width="125px">
+            </div>
+          
+            <p class="text-center">Update Applicant Details</p>
+
+                <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Success!</strong> Your Profile has been Udated Successfully.
+                  <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
+                </div>
+
+                <form [formGroup]="updateJobseekerProfileForm" (ngSubmit)="UpdateJobseekerProfileData()">
+                  <div class="mb-3">
+                    <label class="form-label">Jobseeker Id</label>
+                    <input type="txt" class="form-control" placeholder="Autofilled" formControlName="jobseekerId">
+                  </div> 
+                  <div class="mb-3">
+                      <label class="form-label">Name </label>
+                      <input type="txt" class="form-control" placeholder="Enter Name" formControlName="fullname" >
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Photo </label>
+                      <input type="txt" class="form-control" placeholder="Upload Image" formControlName="image">
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Gender </label>
+                      <input type="txt" class="form-control" placeholder="Gender" formControlName="gender">
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Resume </label>
+                      <input type="txt" class="form-control" placeholder="Upload Resume" formControlName="resume">
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Bio</label>
+                      <input type="txt" class="form-control" placeholder="About Me" formControlName="about_me">
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Tel </label>
+                      <input type="txt" class="form-control" placeholder="Phone Number" formControlName="phone_number">
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Email </label>
+                      <input type="txt" class="form-control" placeholder="Email" formControlName="email">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Location </label>
+                    <input type="txt" class="form-control" placeholder="Location" formControlName="location">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Education </label>
+                    <input type="txt" class="form-control" placeholder="Educational Qulifications" formControlName="educational_qualification">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Proffession </label>
+                    <input type="txt" class="form-control" placeholder="Professional Designation" formControlName="professional_designation">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Years of Experience </label>
+                    <input type="txt" class="form-control" placeholder="Years" formControlName="experience_years">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Job Category </label>
+                    <input type="txt" class="form-control" placeholder="Job Category" formControlName="job_category">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Salary </label>
+                    <input type="txt" class="form-control" placeholder="Salary" formControlName="salary">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Availability</label>
+                    <input type="txt" class="form-control" placeholder="Available Hours" formControlName="availability">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Date </label>
+                    <input type="txt" class="form-control" placeholder="Date Created" formControlName="create_at">
+                  </div>
+
+                  <button type="submit" class="btn btn" style="background-color: orange;">Submit</button>
+                </form>
+
+                <app-update-jobseekerprofile></app-update-jobseekerprofile> 
+                
+
+            
+            <a class="btn" href="/update-jobseekerprofile/{{jobseekerId}}">
+              <img
+                src="https://img.icons8.com/external-wanicon-two-tone-wanicon/30/000000/external-edit-user-interface-wanicon-two-tone-wanicon.png" />
+              &nbsp; <b>Edit Profile</b>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="col-md-3">
+    <app-contacts></app-contacts>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Applicant  Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css"> -->
+<!-- </head> --> 
+<!-- <div class="row">
+
+  <div class="col-md-3">
+    <app-sidebar>
+
+    </app-sidebar>
+  </div>
+
+  <div class="col-md-9">
+
+    <body>
+      <div class="login-dark">
+        <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Success!</strong> Applicant Updated
+          <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
+      </div>
+        <form (ngSubmit)="updateJobseekerProfile()">
+          <h2 class="sr-only" style="color: #5A8F11 !important">Update Applicant  Profile</h2>
+          <h2 class="text-center" style="color: #5A8F11 !important">Update Applicant Profile</h2>
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.about_me" type="text" name="about_me"
+              placeholder="About Me" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.phone_number" type="text" name="phone_number"
+              placeholder="Tel:" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.email"type="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.location" type="tel" name="location"
+              placeholder="location" />
+          </div> 
+          <div class="form-group">
+            <app-photo-upload></app-photo-upload>
+          </div>  -->
+          <!-- <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.educational_qualification" type="textarea" name="educational_qualification"
+              placeholder="Educational Qualification" />
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.location" type="tel" name="location"
+              placeholder="location" />
+          </div> 
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.professional_designation" type="tel" name="professional_designation"
+              placeholder="Professional Designation" />
+          </div> 
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.experience_years" type="tel" name="experience_years"
+              placeholder="Years of Experience" />
+          </div> 
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.employer" type="tel" name="employer"
+              placeholder="Current Employer" />
+          </div> 
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.job_category" type="tel" name="job_category"
+              placeholder="Job Category" />
+          </div> 
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.salary" type="tel" name="salary"
+              placeholder="Expected Salary " />
+          </div> 
+
+          <div class="form-group">
+            <input class="form-control" [(ngModel)] ="jobseekerProfileData.create_at" type="tel" name="create_at"
+              placeholder="Enter Date " />
+          </div> 
+
+          <div class="form-group">
+            <button class="btn btn-block text-light" type="submit"
+              style="background-color: #5A8F11 !important">
+              Save
+            </button>
+          </div>
+          <a routerLink="/jobseekerprofile/" class="forgot">Cancel</a>
+        </form>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </div>
+</div>
+
+
+</html> --> 
+<!-- Footer -->
+

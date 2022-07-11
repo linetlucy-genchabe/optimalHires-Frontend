@@ -13,5 +13,6 @@ export interface JobseekerProfile {
     employer: Employers;
     job_category: string; 
     salary: number;
+    availability: string;
     create_at:Date;
 }

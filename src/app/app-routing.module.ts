@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+import { UpdateJobseekerprofileComponent } from './components/update-jobseekerprofile/update-jobseekerprofile.component';
+
+  
 
 import { AppComponent } from './app.component';
 
@@ -21,6 +25,7 @@ import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseek
 
 import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
@@ -40,14 +45,13 @@ const routes: Routes = [
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
   {path: 'dashboard', component: EmployerDashboardComponent },
+  {path: 'jobseekerprofile/:id', component: JobseekerprofileComponent},
+  {path: 'update-jobseekerprofile/:id', component: UpdateJobseekerprofileComponent},
+  {path: 'employerprofile/:id', component: EmployerprofileComponent},
   {path: 'jobdashboard', component: JobseekerDashboardComponent },
   {path: 'jobseekerprofile', component: JobseekerprofileComponent },
   {path: 'category', component: CategoryComponent },
   
-  
-  
-  
-
   
 
 
