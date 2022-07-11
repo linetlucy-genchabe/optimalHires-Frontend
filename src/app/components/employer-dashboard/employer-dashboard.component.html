@@ -271,3 +271,172 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+<!-- <b>Available Applicants</b>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Resume</th>
+        <th scope="col">Bio</th>
+        <th scope="col">Tel</th>
+        <th scope="col">Location</th>
+        <th scope="col">Education</th>
+        <th scope="col">Proffession</th>
+        <th scope="col">Experience</th>
+        <th scope="col">Job Category</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Availability</th>
+        <th scope="col">Date</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let jobseekerprofile of jobseekerprofile">
+        <th scope="row">{{jobseekerprofile.jobseeker.jobseekerId}}</th>
+        <td>{{jobseekerprofile.jobseeker.fullname}}</td>
+        <td>{{jobseekerprofile.jobseeker.image}}</td>
+        <td>{{jobseekerprofile.jobseeker.gender}}</td>
+        <td>{{jobseekerprofile.jobseeker.resume}}</td>
+        <td>{{jobseekerprofile.about_me}}</td>
+        <td>{{jobseekerprofile.phone_number}}</td>
+        <td>{{jobseekerprofile.location}}</td>
+        <td>{{jobseekerprofile.educational_qualification}}</td>
+        <td>{{jobseekerprofile.professional_designation}}</td>
+        <td>{{jobseekerprofile.experience_years}}</td>
+        <td>{{jobseekerprofile.employer}}</td>
+        <td>{{jobseekerprofile.job_category}}</td>
+        <td>{{jobseekerprofile.salary}}</td>
+        <td>{{jobseekerprofile.availability}}</td>
+        <td>{{jobseekerprofile.create_at}}</td>
+        <td>
+            <i (click)="deleteJobseekerProfile(jobseekerprofile.jobseeker.jobseekerId)" class="fa fa-trash"></i>
+            &nbsp;
+            <a routerLink="/update-jobseekerprofile/:id'{{jobseekerprofile.jobseeker.jobseekerId}}"><i class="fa fa-edit"></i> </a></td>
+        
+      </tr>
+      
+    </tbody>
+  </table> -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class=" offset-2 col-md-8">
+                
+                <div class="jobseekerprofile" >
+                    <h2 class="text-center">Jobseeker Profiles</h2>
+                
+                    <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid orange;box-shadow: 2px 2px 2px 2px orange;height:fit-content;width: 800px;">
+                        <!-- <li >
+                            {{jobseekerprofile.jobseeker.jobseekerId}}
+                        </li> -->
+                        <li >
+                            {{jobseekerprofile.jobseeker.image}}
+                        </li>
+                        <li >
+                            {{jobseekerprofile.jobseeker.fullname}}
+                        </li>
+                    
+                        <li >
+                            {{jobseekerprofile.about_me}}
+                        </li><span id="dots"></span>
+                        <span id="more" style="display: none;">
+                        <!-- <ul  > -->
+                            <li  >
+                                {{jobseekerprofile.jobseeker.gender}}
+                            </li>
+                            <!-- <li >
+                                {{jobseekerprofile.jobseeker.image}}
+                            </li> -->
+                            <li >
+                                {{jobseekerprofile.jobseeker.resume}}
+                            </li>
+                        
+                            <li >
+                                {{jobseekerprofile.phone_number}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.location}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.educational_qualification}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.professional_designation}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.experience_years}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.employer}}
+                            </li>
+                    
+                            <li >
+                                {{jobseekerprofile.job_category}}
+                            </li>
+                            <li >
+                                {{jobseekerprofile.salary}}
+                            </li>
+                            <li >
+                            {{jobseekerprofile.availability}}
+                            </li>
+                            <li >
+                                {{jobseekerprofile.create_at}}
+                            </li>
+                            <i (click)="deleteJobseekerProfile(jobseekerprofile.jobseeker.jobseekerId)" class="fa fa-trash"></i>
+                            &nbsp;
+                            <a routerLink="/update-jobseekerprofile/:id'{{jobseekerprofile.jobseeker.jobseekerId}}"><i class="fa fa-edit"></i> </a>
+                        
+                        <!-- </ul> -->
+                        </span><br>
+                        <button onclick="myFunction()" class="btn btn" style="background-color: orange; " id="myBtn">See more</button><br><br>
+                        
+                    </ul><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<router-outlet></router-outlet>   
+</body>
+
+<!-- <h1>
+    <b>Available Applicants</b>
+
+</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <b>Jobseeker Profile</b>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://media.istockphoto.com/photos/thoughtful-afro-woman-looking-for-new-job-online-picture-id1210523597?k=20&m=1210523597&s=612x612&w=0&h=8-DkNtKlYUOe8NmAerqECKcj9V13QjsGtme30xKrbXE=" class="img-fluid" alt="">
+                        </div>
+                        
+                        
+                        <div class="col-md-8"></div>
+                    </div>
+                    <hr>
+                </div> 
+            </div>
+
+        </div>
+
+    </div>
+</div> -->
+
+<!-- <app-employerprofile></app-employerprofile> -->

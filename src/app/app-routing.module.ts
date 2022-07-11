@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+// import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
+import { UpdateJobseekerprofileComponent } from './components/update-jobseekerprofile/update-jobseekerprofile.component';
+
+  
 
 import { AppComponent } from './app.component';
 
@@ -24,7 +28,11 @@ import { RegisterComponent } from './components/register/register.component';
 
 import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jobseeker-dashboard.component';
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
+<<<<<<< HEAD
 import { RegisteremployerComponent } from './components/registeremployer/registeremployer.component';
+=======
+import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+>>>>>>> 8e6b49518c406ad62ad16a34ed193e6e6d6352e9
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
@@ -43,17 +51,21 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'reviews', component: ReviewsComponent },
   {path: 'applicant', component: ApplicantComponent },
+<<<<<<< HEAD
   {path: 'dashboard/:id', component: EmployerDashboardComponent },
   {path: 'jobdashboard/:id', component: JobseekerDashboardComponent },
+=======
+  {path: 'dashboard', component: EmployerDashboardComponent },
+  {path: 'jobseekerprofile/:id', component: JobseekerprofileComponent},
+  {path: 'update-jobseekerprofile/:id', component: UpdateJobseekerprofileComponent},
+  {path: 'employerprofile/:id', component: EmployerprofileComponent},
+  {path: 'jobdashboard', component: JobseekerDashboardComponent },
+>>>>>>> 8e6b49518c406ad62ad16a34ed193e6e6d6352e9
   {path: 'jobseekerprofile', component: JobseekerprofileComponent },
   {path: 'loginemployer', component: LoginemployerComponent },
   {path: 'loginjobseeker', component: LoginjobseekerComponent },
   {path: 'register', component: RegisterComponent },
   {path: 'registeremployer', component: RegisteremployerComponent },
-  
-  
-  
-
   
 
 
