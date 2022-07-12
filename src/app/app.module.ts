@@ -34,6 +34,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseekerprofile.component';
 // import { LoginOptionsComponent } from './components/login-options/login-options.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { ViewJobseekersComponent } from './components/view-jobseekers/view-jobseekers.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     LoginemployerComponent,
     LoginjobseekerComponent,
     RegisteremployerComponent,
-    MapComponent
+    MapComponent,
+    ViewJobseekersComponent
   ],
   imports: [
     ReactiveFormsModule,

@@ -30,6 +30,7 @@ import { JobseekerDashboardComponent } from './components/jobseeker-dashboard/jo
 import { EmployerDashboardComponent } from './components/employer-dashboard/employer-dashboard.component';
 import { RegisteremployerComponent } from './components/registeremployer/registeremployer.component';
 import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
+import { ViewJobseekersComponent } from './components/view-jobseekers/view-jobseekers.component';
 
 // import { EmployerprofileComponent } from './components/employerprofile/employerprofile.component';
 // import { ApplicantprofileComponent } from './components/applicantprofile/applicantprofile.component';
@@ -53,12 +54,14 @@ const routes: Routes = [
   
   {path: 'jobseekerprofile', component: JobseekerprofileComponent},
   {path: 'update-jobseekerprofile/:id', component: UpdateJobseekerprofileComponent},
-  {path: 'employerprofile/:id', component: EmployerprofileComponent},
+  {path: 'employerprofile', component: EmployerprofileComponent},
  
   {path: 'loginemployer', component: LoginemployerComponent },
   {path: 'loginjobseeker', component: LoginjobseekerComponent },
   {path: 'register', component: RegisterComponent },
   {path: 'registeremployer', component: RegisteremployerComponent },
+  {path: 'view-jobseekers', component: ViewJobseekersComponent},
+  
   
 
 
