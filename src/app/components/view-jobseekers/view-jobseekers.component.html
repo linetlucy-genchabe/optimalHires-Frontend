@@ -9,55 +9,68 @@
                 
                     <ul *ngFor ="let jobseekerprofiles of jobseekerprofile" style=" border: 2px solid orange;box-shadow: 2px 2px 2px 2px orange;height:fit-content;width: 800px;">
                         
-                        <h5>Fullname</h5>
+                        
                         <li >
+                            <h6>Fullname</h6>
                             {{jobseekerprofiles.fullname}}
-                        </li>
-                        <h5>About</h5>
-                        <li >
-                            {{jobseekerprofiles.about_me}}
-                        </li>
-                        <span id="dots"></span>
-                        <span id="more" style="display: none;">
-                       
-                        <li >
-                            {{jobseekerprofiles.jobseeker.resume}}
                         </li>
                         
                         <li >
+                            <h6>About</h6>
+                            {{jobseekerprofiles.about_me}}
+                        </li>
+                        
+                        <span id="dots"></span>
+                        <span id="more" style="display: none;"> 
+                       
+                        <!-- <li >
+                            {{jobseekerprofiles.jobseeker.resume}}
+                        </li> -->
+                        
+                        <li >
+                            <h6>Phone number</h6>
                             {{jobseekerprofiles.phone_number}}
                         </li>
-                    
+                   
                         <li >
+                            <h6>Location</h6>
                             {{jobseekerprofiles.location}}
                         </li>
                     
                         <li >
+                            <h6>Educational qualification</h6>
                             {{jobseekerprofiles.educational_qualification}}
                         </li>
-                    
+                
                         <li >
+                            <h6>Professional Designation</h6>
                             {{jobseekerprofiles.professional_designation}}
                         </li>
-                    
+                 
                         <li >
+                            <h6>   Years of experience</h6>
                             {{jobseekerprofiles.experience_years}}
                         </li>
                     
-                        <li >
-                            {{jobseekerprofiles.employer}}
-                        </li>
+                        
                     
                         <li >
+                            <h6>Job category</h6>
                             {{jobseekerprofiles.job_category}}
                         </li>
+                        
                         <li >
+                            <h6>Salary expectations</h6>
                             {{jobseekerprofiles.salary}}
                         </li>
+                        
                         <li >
+                            <h6>Availability</h6>
                             {{jobseekerprofiles.availability}}
                         </li>
+                        
                         <li >
+                            <h6>Date created</h6>
                             {{jobseekerprofiles.create_at}}
                         </li>
                         
@@ -66,7 +79,7 @@
                         <!-- <button routerLink="/update-jobseekerprofile/' {{jobseekerprofile.jobseeker.jobseekerId}}"><i class="fa fa-edit"></i> </button> -->
                         
                        
-                        </span><br>
+                         </span><br> 
                         <button onclick="myFunction()" class="btn btn" style="background-color: orange; " id="myBtn">See more</button><br><br>
                         
                     </ul><br>
