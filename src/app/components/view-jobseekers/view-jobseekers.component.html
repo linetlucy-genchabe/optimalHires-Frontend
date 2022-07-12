@@ -7,67 +7,61 @@
                 <div class="jobseekerprofile" >
                     <h2 class="text-center">Jobseeker Profiles</h2>
                 
-                    <ul *ngFor ="let jobseekerprofile of jobseekerprofile" style=" border: 2px solid orange;box-shadow: 2px 2px 2px 2px orange;height:fit-content;width: 800px;">
+                    <ul *ngFor ="let jobseekerprofiles of jobseekerprofile" style=" border: 2px solid orange;box-shadow: 2px 2px 2px 2px orange;height:fit-content;width: 800px;">
                         
+                        <h5>Fullname</h5>
                         <li >
-                            {{jobseekerprofile.jobseeker.image}}
+                            {{jobseekerprofiles.fullname}}
                         </li>
+                        <h5>About</h5>
                         <li >
-                            {{jobseekerprofile.jobseeker.fullname}}
-                        </li>
-                    
-                        <li >
-                            {{jobseekerprofile.about_me}}
+                            {{jobseekerprofiles.about_me}}
                         </li>
                         <span id="dots"></span>
                         <span id="more" style="display: none;">
                        
                         <li >
-                            {{jobseekerprofile.jobseeker.gender}}
-                        </li>
-                           
-                        <li >
-                            {{jobseekerprofile.jobseeker.resume}}
+                            {{jobseekerprofiles.jobseeker.resume}}
                         </li>
                         
                         <li >
-                            {{jobseekerprofile.phone_number}}
+                            {{jobseekerprofiles.phone_number}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.location}}
+                            {{jobseekerprofiles.location}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.educational_qualification}}
+                            {{jobseekerprofiles.educational_qualification}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.professional_designation}}
+                            {{jobseekerprofiles.professional_designation}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.experience_years}}
+                            {{jobseekerprofiles.experience_years}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.employer}}
+                            {{jobseekerprofiles.employer}}
                         </li>
                     
                         <li >
-                            {{jobseekerprofile.job_category}}
+                            {{jobseekerprofiles.job_category}}
                         </li>
                         <li >
-                            {{jobseekerprofile.salary}}
+                            {{jobseekerprofiles.salary}}
                         </li>
                         <li >
-                            {{jobseekerprofile.availability}}
+                            {{jobseekerprofiles.availability}}
                         </li>
                         <li >
-                            {{jobseekerprofile.create_at}}
+                            {{jobseekerprofiles.create_at}}
                         </li>
                         
-                        <i (click)="deleteJobseekerProfile(jobseekerprofile.jobseeker.jobseekerId)" class="fa fa-trash"></i>
+                        <i (click)="deleteJobseekerProfile(jobseekerprofiles.jobseeker.jobseekerId)" class="fa fa-trash"></i>
                             &nbsp;
                         <!-- <button routerLink="/update-jobseekerprofile/' {{jobseekerprofile.jobseeker.jobseekerId}}"><i class="fa fa-edit"></i> </button> -->
                         
