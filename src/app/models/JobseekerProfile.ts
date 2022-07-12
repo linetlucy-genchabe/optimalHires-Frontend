@@ -3,6 +3,7 @@ import { Jobseekers } from "./Jobseeker";
 
 export interface JobseekerProfile {
     jobseeker: Jobseekers;
+    fullname:any;
     about_me: any;
     phone_number: any;
     email: string;

@@ -12,7 +12,7 @@ export class JobseekerprofileService {
   
   API_URL= environment.API_URL
 
-  url='http://127.0.0.1:8000/api/jobseekerprofile/'
+  url='http://optimalhires.herokuapp.com/api/jobseekerprofile/'
   JobseekerProfile: any;
   // photoUrl = "http://res.cloudinary.com/dim8pysls/image/upload/"
 
@@ -93,6 +93,9 @@ export class JobseekerprofileService {
   }
 
   
+  getAllJobseekersProfiles():Observable<any>{
+    return this.http.get(this.url)
+  }
 
   
 

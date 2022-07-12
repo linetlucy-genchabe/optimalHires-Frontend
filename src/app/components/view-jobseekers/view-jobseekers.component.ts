@@ -46,11 +46,11 @@ export class ViewJobseekersComponent implements OnInit {
 
     
   ngOnInit(): void {
-    this.getJobseekerProfile()
+    this.getAllJobseekersProfiles()
   }
 
-  getJobseekerProfile(): void{
-    this.jobseekerprofileService.getJobseekerProfile().subscribe(jobseekerprofile=>{
+  getAllJobseekersProfiles(): void{
+    this.jobseekerprofileService.getAllJobseekersProfiles().subscribe(jobseekerprofile=>{
       this.jobseekerprofile=jobseekerprofile;
       // console.log(jobseekerprofile);
     })
