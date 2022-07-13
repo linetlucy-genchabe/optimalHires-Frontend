@@ -36,6 +36,7 @@ import { JobseekerprofileComponent } from './components/jobseekerprofile/jobseek
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ViewJobseekersComponent } from './components/view-jobseekers/view-jobseekers.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,9 +78,6 @@ import { ViewJobseekersComponent } from './components/view-jobseekers/view-jobse
     FormsModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
     AppRoutingModule,
   ],
   providers: [],
