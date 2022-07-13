@@ -4,6 +4,9 @@ import { HttpClientXsrfModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { FormControl } from '@angular/forms';
+
+
+
 @Component({
   selector: 'app-registeremployer',
   templateUrl: './registeremployer.component.html',
