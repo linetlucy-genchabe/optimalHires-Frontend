@@ -97,26 +97,9 @@ export class JobseekerprofileService {
     return this.http.get(this.url)
   }
 
-  
 
   
 
 
-  // saveJobseekerData(data:any){
-  //   console.log(data) ;
-  //   return this.http.post(this.url, data);
-  // }
-  // getJobseeker(jobseekerId:number){
-  //   return this.http.get(`${this.url}${jobseekerId}/`)
-  // }    
-  // updateJobseekerProfile(JobseekerProfileData:any):Observable<any>{
-  //   let attr;
-    
-  //   attr = {headers: new HttpHeaders({
-  //     'Content-Type': 'application/json'
-  //   })
-  //   }
-  //   return this.http.put('http://127.0.0.1:8000/api/updatejobseekerprofile/',JobseekerProfileData,attr)
 
-  // }
 }
